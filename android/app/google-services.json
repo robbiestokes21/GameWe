@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "628091377266",
+    "firebase_url": "https://game-we-63qs6p-default-rtdb.firebaseio.com",
+    "project_id": "game-we-63qs6p",
+    "storage_bucket": "game-we-63qs6p.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628091377266:android:26e6137f5a55aec2e954eb",
+        "android_client_info": {
+          "package_name": "com.dstokesncstudio.gamewe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "628091377266-j9dkhln61guoj3l4biufj43vhgdl9osm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dstokesncstudio.gamewe",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "628091377266-eu84l5p7t2gtgf5ocu1vbgf4gd8chp5h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1xwq7WcAEP7wvMhAAYYJcqq-puzhvmxw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "628091377266-eu84l5p7t2gtgf5ocu1vbgf4gd8chp5h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "628091377266-6r9ju83oppisqmtfc7t38afa9csvbuef.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dstokesncstudio.gamewe"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

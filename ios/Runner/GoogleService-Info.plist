@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>628091377266-6r9ju83oppisqmtfc7t38afa9csvbuef.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.628091377266-6r9ju83oppisqmtfc7t38afa9csvbuef</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>628091377266-j9dkhln61guoj3l4biufj43vhgdl9osm.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCapbJ5ofQJ5S3Xf1YFd6ysvUh4_b0owVk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>628091377266</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.dstokesncstudio.gamewe</string>
+	<key>PROJECT_ID</key>
+	<string>game-we-63qs6p</string>
+	<key>STORAGE_BUCKET</key>
+	<string>game-we-63qs6p.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:628091377266:ios:d62b4f70a565b499e954eb</string>
+	<key>DATABASE_URL</key>
+	<string>https://game-we-63qs6p-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
