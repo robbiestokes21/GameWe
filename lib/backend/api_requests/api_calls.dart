@@ -109,7 +109,7 @@ class AuthBattleNetCall {
         'response_type': "code",
         'scope': "openid",
         'state': "AbCdEfG",
-        'redirect_uri': "https://game-we-63qs6p.flutterflow.app/authcallback",
+        'redirect_uri': "https://gamewe.net/authcallback",
         'client_id': "98630727b7b84746add335d281f0a31f",
       },
       returnBody: true,
@@ -128,7 +128,7 @@ class GetBattleNetTokenCall {
     String? grantType = 'authorization_code',
     String? clientId = '98630727b7b84746add335d281f0a31f',
     String? clientSecret = 'tHiQLEFn4mUnuY67qxoU4pfgUeGLcVnF',
-    String? redirectUri = 'https://game-we-63qs6p.flutterflow.app/authcallback',
+    String? redirectUri = 'https://gamewe.net/authcallback',
   }) async {
     return ApiManager.instance.makeApiCall(
       callName: 'getBattleNetToken',

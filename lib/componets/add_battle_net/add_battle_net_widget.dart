@@ -64,7 +64,7 @@ class _AddBattleNetWidgetState extends State<AddBattleNetWidget> {
                     child: FFButtonWidget(
                       onPressed: () async {
                         await actions.openBattleNet(
-                          'https://oauth.battle.net/authorize?response_type=code&scope=openid&state=AbCdEfG&redirect_uri=https://game-we-63qs6p.flutterflow.app/authcallback&client_id=98630727b7b84746add335d281f0a31f',
+                          'https://oauth.battle.net/authorize?response_type=code&scope=openid&state=AbCdEfG&redirect_uri=https://gamewe.net/authcallback&client_id=98630727b7b84746add335d281f0a31f',
                         );
                       },
                       text: 'Link BattleNet',

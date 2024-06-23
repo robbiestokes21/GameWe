@@ -61,6 +61,12 @@ class FFAppState extends ChangeNotifier {
   set token(String value) {
     _token = value;
   }
+
+  String _battlenetTag = '';
+  String get battlenetTag => _battlenetTag;
+  set battlenetTag(String value) {
+    _battlenetTag = value;
+  }
 }
 
 void _safeInit(Function() initializeField) {

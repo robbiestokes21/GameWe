@@ -4,6 +4,7 @@ import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import 'dart:async';
 import '/custom_code/actions/index.dart' as actions;
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
@@ -96,12 +97,6 @@ class _AuthcallbackWidgetState extends State<AuthcallbackWidget> {
         if (valueOrDefault(currentUserDocument?.battlenetGamerTag, '') ==
                 null ||
             valueOrDefault(currentUserDocument?.battlenetGamerTag, '') == '') {
-          await currentUserReference!.update(createUsersRecordData(
-            battlenetGamerTag: getJsonField(
-              (_model.getUser?.jsonBody ?? ''),
-              r'''$.battletag''',
-            ).toString().toString(),
-          ));
           ScaffoldMessenger.of(context).clearSnackBars();
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
@@ -114,6 +109,21 @@ class _AuthcallbackWidgetState extends State<AuthcallbackWidget> {
               duration: Duration(milliseconds: 4000),
               backgroundColor: FlutterFlowTheme.of(context).secondary,
             ),
+          );
+          FFAppState().battlenetTag = getJsonField(
+            (_model.getUser?.jsonBody ?? ''),
+            r'''$.battletag''',
+          ).toString().toString();
+          setState(() {});
+          unawaited(
+            () async {
+              await currentUserReference!.update(createUsersRecordData(
+                battlenetGamerTag: getJsonField(
+                  (_model.getUser?.jsonBody ?? ''),
+                  r'''$.battletag''',
+                ).toString().toString(),
+              ));
+            }(),
           );
           await actions.openApp();
         } else {
