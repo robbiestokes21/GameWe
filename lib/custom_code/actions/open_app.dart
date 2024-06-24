@@ -11,9 +11,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart'; // Add this import
 
 Future<void> openApp() async {
-  // from browser open app to a page
-  // Use the url_launcher package to open the app
-  const url = 'gamewe://gamewe.net/auth2EditProfile';
+  const url = 'gamewe://gamewe.net/home';
   if (await canLaunch(url)) {
     await launch(url);
   } else {

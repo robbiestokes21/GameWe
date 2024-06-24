@@ -11,7 +11,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/upload_data.dart';
 import 'dart:math';
-import '/custom_code/actions/index.dart' as actions;
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
@@ -798,9 +797,8 @@ class _EditWidgetState extends State<EditWidget> with TickerProviderStateMixin {
                                           '')
                                   ? null
                                   : () async {
-                                      await actions.openBattleNet(
-                                        'https://oauth.battle.net/authorize?response_type=code&scope=openid&state=AbCdEfG&redirect_uri=https://gamewe.net/authcallback&client_id=98630727b7b84746add335d281f0a31f',
-                                      );
+                                      await launchURL(
+                                          'https://oauth.battle.net/authorize?response_type=code&scope=openid&state=AbCdEfG&redirect_uri=https://gamewe.net/authcallback&client_id=98630727b7b84746add335d281f0a31f');
                                     },
                               text: valueOrDefault(
                                               currentUserDocument

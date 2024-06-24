@@ -125,7 +125,7 @@ class _AuthcallbackWidgetState extends State<AuthcallbackWidget> {
               ));
             }(),
           );
-          await actions.openApp();
+          await Future.delayed(const Duration(milliseconds: 45000));
         } else {
           ScaffoldMessenger.of(context).clearSnackBars();
           ScaffoldMessenger.of(context).showSnackBar(
